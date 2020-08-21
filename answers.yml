@@ -1,0 +1,18 @@
+FirstName: Paolo
+LastName: Stefanolli
+MatriculationNumber: 202636
+AcademicYear: 2019-2020
+GitHubUrl: https://github.com/Pavel2121/dncs-lab.git
+Subnets:
+  HostsA:
+    RequiredAddresses: 180
+    SubnetAddress: 15.0.0.0
+    SubnetPrefixLength: 255.255.255.0
+  HostsB:
+    RequiredAddresses: 294
+    SubnetAddress: 15.0.2.0
+    SubnetPrefixLength: 255.255.254.0
+  Hub:
+    RequiredAddresses: 78
+    SubnetAddress: 15.0.4.0
+    SubnetPrefixLength: 255.255.255.128
