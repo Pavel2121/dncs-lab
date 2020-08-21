@@ -419,23 +419,29 @@ vagrant ssh router-1
 and this will display some information about the VM
 
 ```
+$ vagrant ssh router-1
 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-112-generic x86_64)
 
  * Documentation:  https://help.ubuntu.com
  * Management:     https://landscape.canonical.com
  * Support:        https://ubuntu.com/advantage
 
-  System information as of Thu Aug 20 11:14:12 UTC 2020
+  System information as of Fri Aug 21 13:55:20 UTC 2020
 
-  System load:  0.0               Processes:             85
+  System load:  0.0               Processes:             84
   Usage of /:   12.0% of 9.63GB   Users logged in:       0
   Memory usage: 48%               IP address for enp0s3: 10.0.2.15
-  Swap usage:   0%                IP address for enp0s8: 15.0.0.2
+  Swap usage:   0%                IP address for enp0s9: 15.0.6.1
 
 
 3 packages can be updated.
 3 updates are security updates.
 
+
+Last login: Thu Aug 20 11:16:28 2020 from 10.0.2.2
+vagrant@router-1:~$ exit
+logout
+Connection to 127.0.0.1 closed.
 
 ```
 
@@ -487,7 +493,7 @@ Destination     Gateway         Genmask         Flags   MSS Window  irtt Iface
 10.0.2.0        0.0.0.0         255.255.255.0   U         0 0          0 enp0s3
 10.0.2.2        0.0.0.0         255.255.255.255 UH        0 0          0 enp0s3
 15.0.0.0        0.0.0.0         255.255.255.0   U         0 0          0 enp0s8
-
+```
 
 
 8. ```ping "IPaddress"```
@@ -520,7 +526,7 @@ PING 15.0.4.2 (15.0.4.2) 56(84) bytes of data.
 
 In this command you have to change "InterfaceName" with the name of the interface where you want to sniff packets that are passing through it. In this example we ping host-c from host-a meanwhile switch, router-1 and router-2 are sniffing packets on enp0s8 and enp0s9:
 
-![Tcpdump image](https://github.com/davideuez/dncs-lab/blob/master/screenshots/tcpdump.png)
+![Tcpdump image](https://github.com/Pavel2121/dncs-lab/blob/master/Screenshot%20test/test.PNG)
 
 10. ```curl 15.0.4.2```
 
