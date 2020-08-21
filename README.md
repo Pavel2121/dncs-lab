@@ -6,7 +6,7 @@ Design of Networks and Communication Systems, University of Trento. The team is 
 
 - [Network map](#Network-map)
 - [Design Requirements](#Design-requirements)
-- [Our solution for the project](#Our-solution-for-the-project)
+- [Project solution](#Project-solution)
   - [Subnetting](#Subnetting)
   - [Assign IP addresses](#Assign-IP-Adresses)
   - [Set a VLAN](#Set-a-VLAN)
@@ -74,7 +74,7 @@ Design of Networks and Communication Systems, University of Trento. The team is 
 - Routes must be as generic as possible
 - The lab setup must be portable and executed just by launching the `vagrant up` command
 
-# Our solution for the project
+# Project solution
 
 ## Subnetting
 
@@ -439,13 +439,12 @@ Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-112-generic x86_64)
 
 
 Last login: Thu Aug 20 11:16:28 2020 from 10.0.2.2
-vagrant@router-1:~$ exit
-logout
-Connection to 127.0.0.1 closed.
 
 ```
 
-6. For every VM we can use the command ```ifconfig``` to display the list of all Ethernet interfaces on the host, with their own options. This is an example on host-a:
+6. ```ifconfig``` 
+
+For every VM we can use the command to display the list of all Ethernet interfaces on the host, with their own options. This is an example on host-a:
 
 ```
 vagrant@host-a:~$ ifconfig
@@ -524,7 +523,7 @@ PING 15.0.4.2 (15.0.4.2) 56(84) bytes of data.
 
 9. ```tcpdump -i "InterfaceName"```
 
-In this command you have to change "InterfaceName" with the name of the interface where you want to sniff packets that are passing through it. In this example we ping host-c from host-a meanwhile switch, router-1 and router-2 are sniffing packets on enp0s8 and enp0s9:
+In this command you have to change "InterfaceName" with the name of the interface where you want to sniff packets that are passing through it. In this example we ping host-c from host-a meanwhile switch, router-1 is sniffing packets on enp0s8:
 
 ![Tcpdump image](https://github.com/Pavel2121/dncs-lab/blob/master/Screenshot%20test/test.PNG)
 
@@ -638,8 +637,6 @@ function changeCookie() {
 
 
 ```
-
-You can copy the text from **!DOCTYPE html** to **/html** and paste it on an editor. Then save the file with .html extension and open it with a browser (Google Chrome, Safari, Opera, ...)
 
 # Repository information
 
